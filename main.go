@@ -65,7 +65,6 @@ func receiveJSONHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-
 	staticFs := http.FileServer(getStaticFiles())
 
 	mux := http.NewServeMux()
@@ -81,4 +80,7 @@ func main() {
 		log.Fatal(err)
 	}
 
+	// Example of correct integer formatting:
+	// the_answer := 42
+	// fmt.Printf("the_answer is %d\n", the_answer)  // Using %d for integers
 }

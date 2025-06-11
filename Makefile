@@ -79,6 +79,7 @@ git-hooks:
 	test -d .git/hooks || mkdir -p .git/hooks
 	cp -f hooks/git-pre-commit.hook .git/hooks/pre-commit
 	chmod a+x .git/hooks/pre-commit
+	@echo "Git hooks installed successfully. Make sure you have Git Bash or similar shell environment installed for Windows."
 
 .PHONY: all install uninstall clean
 .DEFAULT_GOAL := all
